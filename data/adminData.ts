@@ -298,13 +298,13 @@ export const PIPELINE_LOGS: PipelineLogItem[] = [
   {
     id: "log-105",
     timestamp: "01:20:41 WIB",
-    sourceId: "ds-farmasi-dinkes",
-    sourceName: "Gudang Farmasi Dinkes",
-    module: "Stok Obat",
+    sourceId: "ds-margono",
+    sourceName: "Instalasi Farmasi RSUD Margono",
+    module: "Rekap Resep Farmasi",
     status: "SUCCESS",
     durationMs: 160,
-    recordsIngested: 140,
-    details: "Katalog obat PRB dan serum anti-bisa ular terperbarui ke dashboard publik.",
+    recordsIngested: 73140,
+    details: "Rekapitulasi 73.140 resep September 2026 dari 14 Depo Farmasi RSMS & Paviliun Abiyasa tersinkron via SIMRS FHIR.",
     httpStatus: 200,
   },
   {

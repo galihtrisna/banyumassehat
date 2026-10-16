@@ -256,7 +256,7 @@ export const PIPELINE_LOGS: PipelineLogItem[] = [
     status: "SUCCESS",
     durationMs: 142,
     recordsIngested: 84,
-    details: "Sinkronisasi 84 bed kosong dan okupansi 76% sukses diterima via FHIR Observation.",
+    details: "Sinkronisasi 155 bed kosong dan okupansi 79% (kapasitas 728 bed) sukses diterima via FHIR Observation.",
     httpStatus: 200,
   },
   {

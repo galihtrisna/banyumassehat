@@ -78,12 +78,11 @@ export const BOR_WEEKLY_TREND: BedOccupancyTrend[] = [
 ];
 
 export const ROOM_CLASSES_OCCUPANCY: RoomClassOccupancy[] = [
-  { className: "ICU / ICCU / PICU", totalBeds: 28, filledBeds: 25, rate: 89.3, status: "critical" },
-  { className: "Ruang Isolasi Tekanan Negatif", totalBeds: 20, filledBeds: 9, rate: 45.0, status: "safe" },
-  { className: "Rawat Inap Kelas 1", totalBeds: 90, filledBeds: 70, rate: 77.8, status: "safe" },
-  { className: "Rawat Inap Kelas 2", totalBeds: 120, filledBeds: 98, rate: 81.7, status: "warning" },
-  { className: "Rawat Inap Kelas 3 (BPJS PBI)", totalBeds: 210, filledBeds: 182, rate: 86.7, status: "critical" },
-  { className: "VIP & VVIP Paviliun", totalBeds: 45, filledBeds: 29, rate: 64.4, status: "safe" },
+  { className: "ICU / ICCU / PICU / HCU", totalBeds: 123, filledBeds: 100, rate: 81.3, status: "critical" },
+  { className: "Rawat Inap Kelas 1", totalBeds: 139, filledBeds: 111, rate: 79.9, status: "safe" },
+  { className: "Rawat Inap Kelas 2", totalBeds: 113, filledBeds: 90, rate: 79.6, status: "safe" },
+  { className: "Rawat Inap Kelas 3 (BPJS PBI)", totalBeds: 262, filledBeds: 210, rate: 80.2, status: "warning" },
+  { className: "VIP & VVIP Paviliun", totalBeds: 91, filledBeds: 62, rate: 68.1, status: "safe" },
 ];
 
 export const DOCTOR_WORKLOAD_LIST: DoctorWorkloadData[] = [

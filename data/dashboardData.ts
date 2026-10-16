@@ -553,4 +553,51 @@ export const MARGONO_PENUNJANG_MEDIS_VISITS_2026: MedicalSupportVisitsMonthly[] 
   },
 ];
 
+export interface OutpatientClinicVisit {
+  clinicName: string;
+  newPatients: number;
+  repeatPatients: number;
+  totalVisits: number;
+  isExecutiveEvening?: boolean;
+}
+
+export const MARGONO_ABIYASA_OUTPATIENT_SEPTEMBER_2026: OutpatientClinicVisit[] = [
+  { clinicName: "Klinik Jantung - Abiyasa", newPatients: 19, repeatPatients: 757, totalVisits: 776 },
+  { clinicName: "Klinik Saraf - Abiyasa", newPatients: 12, repeatPatients: 391, totalVisits: 403 },
+  { clinicName: "Klinik Gastroentero Hepatologi - Abiyasa", newPatients: 9, repeatPatients: 287, totalVisits: 296 },
+  { clinicName: "Klinik Neurologi Intervensi - Abiyasa", newPatients: 0, repeatPatients: 198, totalVisits: 198 },
+  { clinicName: "Klinik Neuro Behavior Geriatri - Abiyasa", newPatients: 2, repeatPatients: 186, totalVisits: 188 },
+  { clinicName: "Klinik Endokrin dan DM - Abiyasa", newPatients: 2, repeatPatients: 175, totalVisits: 177 },
+  { clinicName: "Klinik Penyakit Dalam - Abiyasa", newPatients: 20, repeatPatients: 149, totalVisits: 169 },
+  { clinicName: "Klinik Paru-paru - Abiyasa", newPatients: 2, repeatPatients: 129, totalVisits: 131 },
+  { clinicName: "Klinik Hipertensi & Ginjal - Abiyasa", newPatients: 2, repeatPatients: 98, totalVisits: 100 },
+  { clinicName: "Klinik Bedah Syaraf - Abiyasa", newPatients: 4, repeatPatients: 89, totalVisits: 93 },
+  { clinicName: "Klinik Saraf - Eksekutif Sore Non BPJS", newPatients: 11, repeatPatients: 81, totalVisits: 92, isExecutiveEvening: true },
+  { clinicName: "Klinik Bedah Urologi - Abiyasa", newPatients: 4, repeatPatients: 70, totalVisits: 74 },
+  { clinicName: "Klinik Penyakit Tropik Infeksi - Abiyasa", newPatients: 5, repeatPatients: 52, totalVisits: 57 },
+  { clinicName: "Klinik Hematologi Onkologi - Abiyasa", newPatients: 1, repeatPatients: 51, totalVisits: 52 },
+  { clinicName: "Klinik Konservasi Gigi - Abiyasa", newPatients: 7, repeatPatients: 36, totalVisits: 43 },
+  { clinicName: "Klinik Bedah Onkologi - Abiyasa", newPatients: 1, repeatPatients: 41, totalVisits: 42 },
+  { clinicName: "Klinik Kulit dan Kelamin - Abiyasa", newPatients: 5, repeatPatients: 30, totalVisits: 35 },
+  { clinicName: "Klinik Kesehatan Jiwa - Abiyasa", newPatients: 2, repeatPatients: 30, totalVisits: 32 },
+  { clinicName: "Klinik Neuroonkologi - Abiyasa", newPatients: 0, repeatPatients: 30, totalVisits: 30 },
+  { clinicName: "Klinik Sendi Panggul dan Lutut - Abiyasa", newPatients: 1, repeatPatients: 29, totalVisits: 30 },
+  { clinicName: "Klinik Mata - Abiyasa", newPatients: 2, repeatPatients: 25, totalVisits: 27 },
+  { clinicName: "Klinik Reumatologi - Abiyasa", newPatients: 1, repeatPatients: 26, totalVisits: 27 },
+  { clinicName: "Klinik Rehabilitasi Medik - Abiyasa", newPatients: 1, repeatPatients: 23, totalVisits: 24 },
+  { clinicName: "Klinik Bedah Digestive - Abiyasa", newPatients: 1, repeatPatients: 23, totalVisits: 24 },
+  { clinicName: "Klinik Bedah Orthopedi - Abiyasa", newPatients: 0, repeatPatients: 23, totalVisits: 23 },
+  { clinicName: "Klinik Gigi - Abiyasa", newPatients: 1, repeatPatients: 19, totalVisits: 20 },
+  { clinicName: "Klinik BTKV (Bedah Torak, Kardiak Vaskular) - Abiyasa", newPatients: 0, repeatPatients: 19, totalVisits: 19 },
+  { clinicName: "Klinik Paru dan Medik Kritis - Abiyasa", newPatients: 1, repeatPatients: 18, totalVisits: 19 },
+  { clinicName: "Klinik Paru - Eksekutif Sore Non BPJS", newPatients: 2, repeatPatients: 14, totalVisits: 16, isExecutiveEvening: true },
+  { clinicName: "Klinik Endokrin dan DM - Eksekutif Sore Non BPJS", newPatients: 2, repeatPatients: 14, totalVisits: 16, isExecutiveEvening: true },
+  { clinicName: "Klinik Bedah Mulut - Abiyasa", newPatients: 2, repeatPatients: 8, totalVisits: 10 },
+  { clinicName: "Klinik Gizi - Abiyasa", newPatients: 2, repeatPatients: 7, totalVisits: 9 },
+  { clinicName: "Klinik THT - Abiyasa", newPatients: 1, repeatPatients: 6, totalVisits: 7 },
+  { clinicName: "Klinik Gigi dan Mulut - Eksekutif Sore Non BPJS", newPatients: 0, repeatPatients: 4, totalVisits: 4, isExecutiveEvening: true },
+  { clinicName: "Klinik Penyakit Dalam - Eksekutif Sore Non BPJS", newPatients: 0, repeatPatients: 2, totalVisits: 2, isExecutiveEvening: true },
+];
+
+
 

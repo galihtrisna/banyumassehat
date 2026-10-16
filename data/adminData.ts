@@ -343,6 +343,18 @@ export const PIPELINE_LOGS: PipelineLogItem[] = [
     details: "Kunjungan penunjang medis Agustus 2026 (Radiologi, Lab PK/PA, Bank Darah, Hemodialisa, Rehab Medik: 39.195 kunjungan) tersinkron via SIMRS FHIR.",
     httpStatus: 200,
   },
+  {
+    id: "log-109",
+    timestamp: "00:40:05 WIB",
+    sourceId: "ds-margono",
+    sourceName: "Poliklinik Paviliun Abiyasa RSUD Margono",
+    module: "Kunjungan Rawat Jalan",
+    status: "SUCCESS",
+    durationMs: 172,
+    recordsIngested: 3265,
+    details: "Kunjungan rawat jalan September 2026 Paviliun Abiyasa (3.265 pasien di 48 poliklinik/eksekutif) tersinkron via SIMRS FHIR Encounter.",
+    httpStatus: 200,
+  },
 ];
 
 // DATA QUALITY METRICS (4 Dimensi Standar DWH & SATUSEHAT)

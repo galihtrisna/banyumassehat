@@ -450,3 +450,107 @@ export const MARGONO_PHARMACY_RECAP_2026: PharmacyDepoMonthlyPrescription[] = [
   },
 ];
 
+export interface MedicalSupportVisitsMonthly {
+  month: string;
+  radiologi: number;
+  radiotherapi: number;
+  labPK: number;
+  labPA: number;
+  bankDarah: number;
+  rehabilitasiMedik: number;
+  haemodialisa: number;
+  totalKunjungan: number;
+}
+
+export const MARGONO_PENUNJANG_MEDIS_VISITS_2026: MedicalSupportVisitsMonthly[] = [
+  {
+    month: "Januari",
+    radiologi: 8314,
+    radiotherapi: 1969,
+    labPK: 20696,
+    labPA: 1297,
+    bankDarah: 3691,
+    rehabilitasiMedik: 3812,
+    haemodialisa: 2090,
+    totalKunjungan: 41869,
+  },
+  {
+    month: "Februari",
+    radiologi: 5244,
+    radiotherapi: 1712,
+    labPK: 16991,
+    labPA: 1255,
+    bankDarah: 3351,
+    rehabilitasiMedik: 3082,
+    haemodialisa: 1992,
+    totalKunjungan: 33627,
+  },
+  {
+    month: "Maret",
+    radiologi: 5014,
+    radiotherapi: 1685,
+    labPK: 17324,
+    labPA: 1072,
+    bankDarah: 3461,
+    rehabilitasiMedik: 2873,
+    haemodialisa: 2206,
+    totalKunjungan: 33635,
+  },
+  {
+    month: "April",
+    radiologi: 6225,
+    radiotherapi: 1986,
+    labPK: 19893,
+    labPA: 1072,
+    bankDarah: 1524,
+    rehabilitasiMedik: 3279,
+    haemodialisa: 2135,
+    totalKunjungan: 36114,
+  },
+  {
+    month: "Mei",
+    radiologi: 5619,
+    radiotherapi: 1653,
+    labPK: 19951,
+    labPA: 1244,
+    bankDarah: 3454,
+    rehabilitasiMedik: 2961,
+    haemodialisa: 2146,
+    totalKunjungan: 37028,
+  },
+  {
+    month: "Juni",
+    radiologi: 5991,
+    radiotherapi: 2247,
+    labPK: 20463,
+    labPA: 1309,
+    bankDarah: 3474,
+    rehabilitasiMedik: 3086,
+    haemodialisa: 2135,
+    totalKunjungan: 38705,
+  },
+  {
+    month: "Juli",
+    radiologi: 6417,
+    radiotherapi: 1707,
+    labPK: 21365,
+    labPA: 1433,
+    bankDarah: 3441,
+    rehabilitasiMedik: 3511,
+    haemodialisa: 2287,
+    totalKunjungan: 40161,
+  },
+  {
+    month: "Agustus",
+    radiologi: 6012,
+    radiotherapi: 799,
+    labPK: 22033,
+    labPA: 1366,
+    bankDarah: 3556,
+    rehabilitasiMedik: 3231,
+    haemodialisa: 2198,
+    totalKunjungan: 39195,
+  },
+];
+
+

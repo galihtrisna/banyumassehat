@@ -331,6 +331,18 @@ export const PIPELINE_LOGS: PipelineLogItem[] = [
     details: "HTTP 504 Gateway Timeout: Endpoint database bridge tidak merespons dalam 5 detik.",
     httpStatus: 504,
   },
+  {
+    id: "log-108",
+    timestamp: "00:45:22 WIB",
+    sourceId: "ds-margono",
+    sourceName: "Instalasi Penunjang Medis RSUD Margono",
+    module: "Kunjungan Penunjang Medis",
+    status: "SUCCESS",
+    durationMs: 145,
+    recordsIngested: 39195,
+    details: "Kunjungan penunjang medis Agustus 2026 (Radiologi, Lab PK/PA, Bank Darah, Hemodialisa, Rehab Medik: 39.195 kunjungan) tersinkron via SIMRS FHIR.",
+    httpStatus: 200,
+  },
 ];
 
 // DATA QUALITY METRICS (4 Dimensi Standar DWH & SATUSEHAT)

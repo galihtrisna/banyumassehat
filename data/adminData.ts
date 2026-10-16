@@ -379,6 +379,18 @@ export const PIPELINE_LOGS: PipelineLogItem[] = [
     details: "Sensus pasien rawat inap September 2026 (3.765 pasien: 1.698 pria, 2.067 wanita) dari 20 bangsal/ruangan berhasil disinkronkan via SIMRS FHIR Encounter.",
     httpStatus: 200,
   },
+  {
+    id: "log-112",
+    timestamp: "00:25:30 WIB",
+    sourceId: "ds-banyumas",
+    sourceName: "SIMRS RSUD Banyumas & RSU Siaga Medika",
+    module: "Jadwal Dokter & Poliklinik",
+    status: "SUCCESS",
+    durationMs: 152,
+    recordsIngested: 36,
+    details: "Sinkronisasi jadwal praktik dokter spesialis RSUD Banyumas dan RSU Siaga Medika sukses via SIMRS Bridge.",
+    httpStatus: 200,
+  },
 ];
 
 // DATA QUALITY METRICS (4 Dimensi Standar DWH & SATUSEHAT)

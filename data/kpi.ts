@@ -4,7 +4,7 @@ export const KPI_METRICS: KPIMetric[] = [
   {
     id: "beds",
     title: "Kapasitas Rawat Inap",
-    value: "553",
+    value: "557",
     label: "Bed Kosong",
     subtitle: "Tersedia dari 14 Rumah Sakit Aktif SIRANAP",
     icon: "bed",

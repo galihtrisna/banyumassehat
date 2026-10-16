@@ -355,6 +355,30 @@ export const PIPELINE_LOGS: PipelineLogItem[] = [
     details: "Kunjungan rawat jalan September 2026 Paviliun Abiyasa (3.265 pasien di 48 poliklinik/eksekutif) tersinkron via SIMRS FHIR Encounter.",
     httpStatus: 200,
   },
+  {
+    id: "log-110",
+    timestamp: "00:35:14 WIB",
+    sourceId: "ds-margono",
+    sourceName: "Instalasi Gawat Darurat (IGD) RSUD Margono",
+    module: "Triase & Kunjungan IGD",
+    status: "SUCCESS",
+    durationMs: 138,
+    recordsIngested: 2796,
+    details: "Kunjungan IGD September 2026 (2.796 pasien: 1.255 baru, 1.541 lama) dari 24 SMF terverifikasi masuk antrean sinkron.",
+    httpStatus: 200,
+  },
+  {
+    id: "log-111",
+    timestamp: "00:30:45 WIB",
+    sourceId: "ds-margono",
+    sourceName: "Instalasi Rawat Inap RSUD Margono",
+    module: "Admisi & Sensus Rawat Inap",
+    status: "SUCCESS",
+    durationMs: 165,
+    recordsIngested: 3765,
+    details: "Sensus pasien rawat inap September 2026 (3.765 pasien: 1.698 pria, 2.067 wanita) dari 20 bangsal/ruangan berhasil disinkronkan via SIMRS FHIR Encounter.",
+    httpStatus: 200,
+  },
 ];
 
 // DATA QUALITY METRICS (4 Dimensi Standar DWH & SATUSEHAT)

@@ -599,5 +599,71 @@ export const MARGONO_ABIYASA_OUTPATIENT_SEPTEMBER_2026: OutpatientClinicVisit[] 
   { clinicName: "Klinik Penyakit Dalam - Eksekutif Sore Non BPJS", newPatients: 0, repeatPatients: 2, totalVisits: 2, isExecutiveEvening: true },
 ];
 
+export interface IgdSmfVisit {
+  smf: string;
+  newPatients: number;
+  repeatPatients: number;
+  totalVisits: number;
+}
+
+export const MARGONO_IGD_VISITS_SEPTEMBER_2026: IgdSmfVisit[] = [
+  { smf: "Dokter Umum (Triase & Akut)", newPatients: 298, repeatPatients: 253, totalVisits: 551 },
+  { smf: "Penyakit Dalam", newPatients: 169, repeatPatients: 360, totalVisits: 529 },
+  { smf: "Kesehatan Anak (Pediatri)", newPatients: 165, repeatPatients: 89, totalVisits: 254 },
+  { smf: "Saraf (Neurologi)", newPatients: 92, repeatPatients: 133, totalVisits: 225 },
+  { smf: "Obstetri & Ginekologi (Obgin)", newPatients: 72, repeatPatients: 86, totalVisits: 158 },
+  { smf: "Paru (Pulmonologi)", newPatients: 47, repeatPatients: 108, totalVisits: 155 },
+  { smf: "Bedah Saraf", newPatients: 92, repeatPatients: 45, totalVisits: 137 },
+  { smf: "Kardiologi (Jantung & Pembuluh Darah)", newPatients: 58, repeatPatients: 74, totalVisits: 132 },
+  { smf: "Jiwa (Psikiatri)", newPatients: 24, repeatPatients: 72, totalVisits: 96 },
+  { smf: "Hematologi Onkologi", newPatients: 15, repeatPatients: 81, totalVisits: 96 },
+  { smf: "Bedah Umum", newPatients: 42, repeatPatients: 53, totalVisits: 95 },
+  { smf: "Bedah Orthopedi", newPatients: 48, repeatPatients: 22, totalVisits: 70 },
+  { smf: "Bedah Onkologi", newPatients: 3, repeatPatients: 57, totalVisits: 60 },
+  { smf: "Bedah Digestive", newPatients: 19, repeatPatients: 24, totalVisits: 43 },
+  { smf: "Bedah Thorax", newPatients: 25, repeatPatients: 12, totalVisits: 37 },
+  { smf: "Bedah Anak", newPatients: 27, repeatPatients: 8, totalVisits: 35 },
+  { smf: "THT (Telinga Hidung Tenggorok)", newPatients: 10, repeatPatients: 25, totalVisits: 35 },
+  { smf: "Bedah Mulut", newPatients: 23, repeatPatients: 6, totalVisits: 29 },
+  { smf: "Bedah Urologi", newPatients: 10, repeatPatients: 15, totalVisits: 25 },
+  { smf: "Anesthesi (Resusitasi & Sedasi)", newPatients: 11, repeatPatients: 12, totalVisits: 23 },
+  { smf: "Mata (Oftalmologi)", newPatients: 5, repeatPatients: 2, totalVisits: 7 },
+  { smf: "Kulit & Kelamin (Dermatologi)", newPatients: 0, repeatPatients: 3, totalVisits: 3 },
+  { smf: "Gizi Medik", newPatients: 0, repeatPatients: 1, totalVisits: 1 },
+  { smf: "Bedah Plastik", newPatients: 0, repeatPatients: 0, totalVisits: 0 },
+];
+
+export interface InpatientWardVisit {
+  wardName: string;
+  malePatients: number;
+  femalePatients: number;
+  totalPatients: number;
+  category?: 'intensif' | 'maternal_perinatal' | 'rawat_inap_umum' | 'isolasi';
+}
+
+export const MARGONO_INPATIENT_WARD_VISITS_SEPTEMBER_2026: InpatientWardVisit[] = [
+  { wardName: "Wijaya Kusuma", malePatients: 237, femalePatients: 398, totalPatients: 635, category: "rawat_inap_umum" },
+  { wardName: "Teratai", malePatients: 273, femalePatients: 317, totalPatients: 590, category: "rawat_inap_umum" },
+  { wardName: "Seruni", malePatients: 208, femalePatients: 185, totalPatients: 393, category: "rawat_inap_umum" },
+  { wardName: "Soeparjo Rustam", malePatients: 142, femalePatients: 168, totalPatients: 310, category: "rawat_inap_umum" },
+  { wardName: "Mawar", malePatients: 100, femalePatients: 98, totalPatients: 198, category: "rawat_inap_umum" },
+  { wardName: "Flamboyan (Maternal)", malePatients: 0, femalePatients: 193, totalPatients: 193, category: "maternal_perinatal" },
+  { wardName: "Cendana", malePatients: 109, femalePatients: 77, totalPatients: 186, category: "rawat_inap_umum" },
+  { wardName: "Aster", malePatients: 102, femalePatients: 83, totalPatients: 185, category: "rawat_inap_umum" },
+  { wardName: "Kenanga", malePatients: 124, femalePatients: 52, totalPatients: 176, category: "rawat_inap_umum" },
+  { wardName: "Asoka", malePatients: 153, femalePatients: 7, totalPatients: 160, category: "rawat_inap_umum" },
+  { wardName: "Dahlia", malePatients: 3, femalePatients: 155, totalPatients: 158, category: "rawat_inap_umum" },
+  { wardName: "Rosela", malePatients: 2, femalePatients: 133, totalPatients: 135, category: "rawat_inap_umum" },
+  { wardName: "Anggrek", malePatients: 53, femalePatients: 45, totalPatients: 98, category: "rawat_inap_umum" },
+  { wardName: "Azalea", malePatients: 42, femalePatients: 56, totalPatients: 98, category: "rawat_inap_umum" },
+  { wardName: "Melati", malePatients: 54, femalePatients: 33, totalPatients: 87, category: "rawat_inap_umum" },
+  { wardName: "HCU", malePatients: 28, femalePatients: 29, totalPatients: 57, category: "intensif" },
+  { wardName: "ICU", malePatients: 25, femalePatients: 13, totalPatients: 38, category: "intensif" },
+  { wardName: "Bougenvile Isolasi", malePatients: 20, femalePatients: 12, totalPatients: 32, category: "isolasi" },
+  { wardName: "Flamboyan (Perinatal)", malePatients: 11, femalePatients: 9, totalPatients: 20, category: "maternal_perinatal" },
+  { wardName: "PICU", malePatients: 12, femalePatients: 4, totalPatients: 16, category: "intensif" },
+];
+
+
 
 

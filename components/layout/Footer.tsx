@@ -11,9 +11,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Col 1 */}
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-white">
-                <Icon name="local_hospital" filled size={20} />
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-8 h-8 flex items-center justify-center shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Logo Priksa"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-bold text-lg text-primary">Priksa</span>
             </div>

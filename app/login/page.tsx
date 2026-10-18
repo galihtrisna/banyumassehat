@@ -120,8 +120,12 @@ export default function LoginPage() {
       {/* Top Header Bar Terpadu Pemkab Banyumas */}
       <div className="max-w-2xl mx-auto w-full flex items-center justify-between pb-3 pt-1">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-sm shadow-primary/20 group-hover:scale-105 transition-transform">
-            <Icon name="local_hospital" filled size={22} />
+          <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
+            <img
+              src="/logo.png"
+              alt="Logo Priksa"
+              className="w-full h-full object-contain drop-shadow-sm"
+            />
           </div>
           <div>
             <div className="flex items-center gap-2">

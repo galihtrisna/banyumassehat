@@ -128,8 +128,12 @@ export default function DashboardLayout({
         <div className="p-6 border-b border-slate-100">
           <div className="flex items-center justify-between">
             <Link href="/dashboard" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-on-primary shadow-sm shadow-primary/20 group-hover:scale-105 transition-transform">
-                <Icon name="local_hospital" filled size={22} />
+              <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Logo Priksa"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                />
               </div>
               <div>
                 <span className="font-extrabold text-base text-primary block leading-tight tracking-tight">

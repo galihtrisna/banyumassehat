@@ -23,8 +23,12 @@ export function Header() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo & Title */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-on-primary shadow-sm shadow-primary/20 group-hover:scale-105 transition-transform">
-            <Icon name="local_hospital" filled size={24} />
+          <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
+            <img
+              src="/logo.png"
+              alt="Logo Priksa"
+              className="w-full h-full object-contain drop-shadow-sm"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-lg text-primary leading-tight tracking-tight">

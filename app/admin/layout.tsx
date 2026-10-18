@@ -113,8 +113,12 @@ export default function AdminLayout({
         <div className="p-6 border-b border-slate-100">
           <div className="flex items-center justify-between">
             <Link href="/admin" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white shadow-sm shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-                <Icon name="dns" size={22} />
+              <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Logo Priksa"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                />
               </div>
               <div>
                 <span className="font-extrabold text-base text-primary block leading-tight tracking-tight">

@@ -4,7 +4,7 @@ import { MedicineStockSection } from "@/components/sections/MedicineStockSection
 import { MEDICINES_DATA } from "@/data/medicines";
 
 export const metadata: Metadata = {
-  title: "Info Stok Obat Esensial - Banyumas Sehat",
+  title: "Info Stok Obat Esensial - Priksa",
   description:
     "Monitoring ketersediaan obat esensial, Program Rujuk Balik (PRB BPJS), serum anti-bisa (SABU/SAR), dan kontak farmasi 24 jam faskes Banyumas.",
 };

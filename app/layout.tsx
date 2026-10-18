@@ -15,10 +15,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Banyumas Sehat - Portal Integrasi Layanan Kesehatan Kabupaten Banyumas",
+  title: "Priksa - Portal Integrasi Layanan Kesehatan Kabupaten Banyumas",
   description:
-    "Portal Satu Sehat Banyumas: Transparansi ketersediaan tempat tidur RS (SIRANAP), jadwal dokter spesialis poliklinik, stok obat esensial, stok darah PMI & BDRS, serta direktori IGD faskes se-Kabupaten Banyumas.",
+    "Portal Priksa: Transparansi ketersediaan tempat tidur RS (SIRANAP), jadwal dokter spesialis poliklinik, stok obat esensial, stok darah PMI & BDRS, serta direktori IGD faskes se-Kabupaten Banyumas.",
   keywords: [
+    "Priksa",
+    "Priksa Banyumas",
     "Banyumas Sehat",
     "SIRANAP Banyumas",
     "RSUD Margono",

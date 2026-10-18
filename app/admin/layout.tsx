@@ -118,7 +118,7 @@ export default function AdminLayout({
               </div>
               <div>
                 <span className="font-extrabold text-base text-primary block leading-tight tracking-tight">
-                  Banyumas Sehat
+                  Priksa
                 </span>
                 <span className="text-[11px] font-semibold text-outline uppercase tracking-wider block">
                   Konsol Admin Sistem
@@ -310,7 +310,7 @@ export default function AdminLayout({
       >
         <div className="space-y-4">
           <p className="text-xs text-on-surface-variant leading-relaxed">
-            Menjalankan proses tarik data langsung (*on-demand*) dari API SIMRS rumah sakit dan gateway SatuSehat Kemenkes ke data warehouse Banyumas Sehat.
+            Menjalankan proses tarik data langsung (*on-demand*) dari API SIMRS rumah sakit dan gateway SatuSehat Kemenkes ke data warehouse Priksa.
           </p>
 
           <div className="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-on-surface">

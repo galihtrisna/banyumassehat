@@ -133,7 +133,7 @@ export default function DashboardLayout({
               </div>
               <div>
                 <span className="font-extrabold text-base text-primary block leading-tight tracking-tight">
-                  Banyumas Sehat
+                  Priksa
                 </span>
                 <span className="text-[11px] font-semibold text-outline uppercase tracking-wider block">
                   Panel Pengelola Faskes

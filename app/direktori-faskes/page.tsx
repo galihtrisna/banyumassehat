@@ -4,7 +4,7 @@ import { DirectorySection } from "@/components/sections/DirectorySection";
 import { HOSPITALS_DATA, PUSKESMAS_DATA } from "@/data/hospitals";
 
 export const metadata: Metadata = {
-  title: "Direktori Faskes & IGD Banyumas - Banyumas Sehat",
+  title: "Direktori Faskes & IGD Banyumas - Priksa",
   description:
     "Akses direktori rumah sakit rujukan, 40 Puskesmas, nomor darurat IGD 24 jam, dan navigasi faskes di Kabupaten Banyumas.",
 };

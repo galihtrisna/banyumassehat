@@ -4,7 +4,7 @@ import { BedAvailabilitySection } from "@/components/sections/BedAvailabilitySec
 import { HOSPITALS_DATA } from "@/data/hospitals";
 
 export const metadata: Metadata = {
-  title: "Ketersediaan Kamar RS - Banyumas Sehat",
+  title: "Ketersediaan Kamar RS - Priksa",
   description:
     "Pantau ketersediaan tempat tidur rawat inap, ICU, NICU, PICU, dan isolasi real-time di seluruh rumah sakit se-Kabupaten Banyumas.",
 };

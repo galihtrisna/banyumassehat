@@ -147,7 +147,7 @@ export default function CekKualitasDataPage() {
       <div>
         <div className="flex items-center justify-between mb-3 font-mono">
           <span className="text-xs font-bold text-outline uppercase tracking-wider">
-            Indeks 4 Dimensi Kualitas Data (DWH Banyumas Sehat)
+            Indeks 4 Dimensi Kualitas Data (DWH Priksa)
           </span>
           <span className="text-xs text-primary font-bold">
             Skor Gabungan: 96.2% (Grade A)

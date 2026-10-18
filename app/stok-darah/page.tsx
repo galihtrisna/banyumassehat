@@ -8,7 +8,7 @@ import {
 } from "@/data/bloodStock";
 
 export const metadata: Metadata = {
-  title: "Pusat Data Stok Darah Real-time - Banyumas Sehat",
+  title: "Pusat Data Stok Darah Real-time - Priksa",
   description:
     "Pantau persediaan kantong darah PMI Kabupaten Banyumas dan Bank Darah Rumah Sakit (BDRS) serta jadwal bus donor darah minggu ini.",
 };

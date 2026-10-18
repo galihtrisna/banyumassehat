@@ -94,7 +94,7 @@ export default function Home() {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
             </span>
             <span className="text-xs sm:text-sm font-bold text-primary tracking-wide">
-              BanyumasSehat
+              Priksa
             </span>
           </div>
 

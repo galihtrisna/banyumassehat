@@ -28,7 +28,7 @@ export function Header() {
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-lg text-primary leading-tight tracking-tight">
-              Banyumas Sehat
+              Priksa
             </span>
             <span className="text-xs text-on-surface-variant font-medium leading-none hidden sm:block">
               Portal Integrasi Faskes Banyumas

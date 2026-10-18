@@ -126,10 +126,10 @@ export default function LoginPage() {
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-base text-slate-900 leading-tight">
-                Banyumas Sehat
+                Priksa
               </span>
               <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800 border border-sky-200 uppercase tracking-wider">
-                Pemkab Banyumas
+                Banyumas
               </span>
             </div>
             <span className="text-xs text-slate-500 block">
@@ -419,7 +419,7 @@ export default function LoginPage() {
                 Portal Masuk Petugas
               </h2>
               <p className="text-xs text-slate-500 mt-1">
-                Akses pengelolaan data fasilitas kesehatan &amp; sistem Banyumas Sehat
+                Akses pengelolaan data fasilitas kesehatan &amp; sistem Priksa
               </p>
             </div>
 

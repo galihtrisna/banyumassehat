@@ -4,7 +4,7 @@ import { DoctorScheduleSection } from "@/components/sections/DoctorScheduleSecti
 import { DOCTORS_DATA } from "@/data/doctors";
 
 export const metadata: Metadata = {
-  title: "Jadwal & Antrean Dokter Spesialis - Banyumas Sehat",
+  title: "Jadwal & Antrean Dokter Spesialis - Priksa",
   description:
     "Cek jadwal praktek dokter spesialis di poliklinik rumah sakit se-Kabupaten Banyumas dan ambil nomor antrean Mobile JKN online.",
 };

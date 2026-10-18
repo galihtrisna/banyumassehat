@@ -15,15 +15,11 @@ export function Footer() {
               <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-white">
                 <Icon name="local_hospital" filled size={20} />
               </div>
-              <span className="font-bold text-lg text-primary">Banyumas Sehat</span>
+              <span className="font-bold text-lg text-primary">Priksa</span>
             </div>
             <p className="text-sm text-on-surface-variant mb-4 leading-relaxed">
-              Sistem Integrasi Pelayanan Kesehatan Terpadu Pemerintah Kabupaten Banyumas untuk transparansi dan kemudahan akses masyarakat.
+              Sistem Integrasi Pelayanan Kesehatan Terpadu Kabupaten Banyumas untuk transparansi dan kemudahan akses masyarakat.
             </p>
-            <span className="text-xs text-outline block">Disponsori oleh:</span>
-            <span className="text-sm font-semibold text-on-surface">
-              Dinas Kesehatan Kabupaten Banyumas
-            </span>
           </div>
 
           {/* Col 2 */}
@@ -93,20 +89,20 @@ export function Footer() {
           {/* Col 4 */}
           <div>
             <span className="font-bold text-base text-on-surface block mb-3">
-              Sekretariat Daerah
+              Tim Pengembang
             </span>
             <p className="text-sm text-on-surface-variant mb-2 leading-relaxed">
-              Jl. Kabupaten No. 1, Purwokerto, Kabupaten Banyumas, Jawa Tengah 53115
+              Purwokerto, Kabupaten Banyumas, Jawa Tengah
             </p>
             <p className="text-sm text-on-surface-variant">
-              Email: <span className="font-medium text-primary">dinkes@banyumaskab.go.id</span>
+              Inovasi Layanan Kesehatan Digital Krenova Banyumas
             </p>
           </div>
         </div>
 
         {/* Bottom row */}
         <div className="pt-6 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-on-surface-variant">
-          <p>© 2025 Pemerintah Kabupaten Banyumas. Seluruh Hak Cipta Dilindungi.</p>
+          <p>© 2026 Tim Pengembangan Priksa. Seluruh Hak Cipta Dilindungi.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-primary transition-colors">Kebijakan Privasi</a>
             <a href="#" className="hover:text-primary transition-colors">Standar Pelayanan Publik</a>

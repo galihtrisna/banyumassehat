@@ -47,7 +47,7 @@ export function Modal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-hidden">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-on-surface/40 backdrop-blur-md transition-opacity"
@@ -57,29 +57,33 @@ export function Modal({
 
       {/* Modal Dialog Box */}
       <div
-        className={`relative w-full ${maxWidthMap[resolvedWidth]} bg-surface-container-lowest rounded-3xl shadow-2xl border border-slate-200/80 p-6 sm:p-8 z-10 my-8 overflow-hidden`}
+        className={`relative w-full ${maxWidthMap[resolvedWidth]} max-h-[92vh] sm:max-h-[85vh] flex flex-col bg-surface-container-lowest rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200/80 z-10 my-auto overflow-hidden`}
         role="dialog"
         aria-modal="true"
       >
-        <div className="flex items-start justify-between gap-4 mb-5 border-b border-surface-container-low pb-4">
-          <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-on-surface leading-tight">
+        {/* Header - Fixed at Top */}
+        <div className="flex items-start justify-between gap-3 p-4 sm:p-6 border-b border-surface-container-low shrink-0 bg-surface-container-lowest">
+          <div className="min-w-0 pr-2">
+            <h3 className="text-lg sm:text-xl font-bold text-on-surface leading-snug line-clamp-2 sm:line-clamp-none">
               {title}
             </h3>
             {subtitle && (
-              <p className="text-sm text-on-surface-variant mt-1">{subtitle}</p>
+              <p className="text-xs sm:text-sm text-on-surface-variant mt-0.5 line-clamp-1 sm:line-clamp-none">
+                {subtitle}
+              </p>
             )}
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer"
+            className="p-1.5 sm:p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer shrink-0"
             aria-label="Tutup dialog"
           >
-            <Icon name="close" size={24} />
+            <Icon name="close" size={22} />
           </button>
         </div>
 
-        <div className="text-on-surface text-sm sm:text-base leading-relaxed">
+        {/* Scrollable Content Body */}
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 text-on-surface text-xs sm:text-sm leading-relaxed overscroll-contain">
           {children}
         </div>
       </div>

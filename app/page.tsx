@@ -179,10 +179,10 @@ export default function Home() {
               </div>
             </form>
 
-            {/* Quick Search Shortcut Chips */}
-            <div className="w-full max-w-full overflow-hidden">
+            {/* Quick Search Shortcut Chips (Desktop/Tablet Only) */}
+            <div className="w-full max-w-full overflow-hidden hidden sm:block">
               <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 sm:flex-wrap sm:justify-center no-scrollbar text-xs">
-                <span className="text-slate-500 font-semibold shrink-0 hidden sm:inline">Pintasan Cepat:</span>
+                <span className="text-slate-500 font-semibold shrink-0">Pintasan Cepat:</span>
                 {[
                   { label: "Kamar Rawat Inap", href: "/kamar" },
                   { label: "Jadwal Dokter", href: "/jadwal-dokter" },

@@ -98,9 +98,6 @@ export function Footer() {
             <p className="text-sm text-on-surface-variant mb-2 leading-relaxed">
               Purwokerto, Kabupaten Banyumas, Jawa Tengah
             </p>
-            <p className="text-sm text-on-surface-variant">
-              Inovasi Layanan Kesehatan Digital Krenova Banyumas
-            </p>
           </div>
         </div>
 

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Icon } from "@/components/ui/Icon";
 import { Badge } from "@/components/ui/Badge";
@@ -86,75 +87,128 @@ export default function Home() {
     <div className="py-6 sm:py-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* HERO SECTION */}
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center mb-12">
-          {/* Live Sync Pill */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest shadow-sm mb-6 text-primary border border-slate-200/60">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
-            </span>
-            <span className="text-xs sm:text-sm font-bold text-primary tracking-wide">
-              Priksa
-            </span>
+        <div className="relative w-full overflow-hidden rounded-3xl bg-gradient-to-b from-slate-50/60 via-cyan-50/30 to-white pt-8 pb-12 sm:pt-12 sm:pb-16 mb-12 border border-slate-200/60 shadow-sm">
+          {/* Background Network Graphic & Wave */}
+          <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center opacity-70">
+            <Image
+              src="/images/hero/hero-bg-network.png"
+              alt="Network Background"
+              width={1440}
+              height={700}
+              className="w-full h-full object-cover sm:object-contain object-center"
+              priority
+            />
           </div>
 
-          {/* Headline */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface mb-4 tracking-tight leading-[1.15]">
-            Portal Pelayanan Kesehatan Terpadu{" "}
-            <span className="text-primary block mt-1">Kabupaten Banyumas</span>
-          </h1>
+          {/* Menara Pandang Teratai Purwokerto (Left) */}
+          <div className="hidden lg:block absolute left-2 xl:left-6 2xl:left-10 bottom-0 w-[160px] xl:w-[200px] 2xl:w-[230px] pointer-events-none select-none z-10">
+            <Image
+              src="/images/hero/menara-teratai-clean.png"
+              alt="Menara Pandang Teratai Purwokerto"
+              width={237}
+              height={518}
+              className="w-full h-auto drop-shadow-md"
+              priority
+            />
+          </div>
 
-          <p className="text-sm sm:text-base lg:text-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
-            Akses cepat dan transparan informasi tempat tidur rumah sakit, antrean dokter, obat vital, serta persediaan darah dari seluruh faskes jejaring Banyumas.
-          </p>
-
-          {/* Quick Smart Search Bar */}
-          <form
-            onSubmit={handleSearchSubmit}
-            className="w-full bg-surface-container-lowest p-2 sm:p-2.5 rounded-3xl shadow-xl shadow-primary/5 border border-slate-200/80 mb-4"
-          >
-            <div className="flex flex-col sm:flex-row items-center bg-surface-container-low rounded-2xl p-1 gap-2">
-              <div className="flex items-center gap-2 px-3 py-2 flex-1 w-full">
-                <Icon name="search" size={24} className="text-primary shrink-0" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Ketik kebutuhan Anda (misal: ICU Margono, Dokter Anak, Insulin, Darah O+)..."
-                  className="w-full bg-transparent border-none outline-none text-xs sm:text-sm text-on-surface placeholder:text-outline focus:ring-0"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                variant="primary"
-                size="md"
-                iconRight="arrow_forward"
-                className="w-full sm:w-auto py-2.5 shrink-0"
-              >
-                Cari Langsung
-              </Button>
+          {/* Hospital & Doctor Cards (Right) */}
+          <div className="hidden lg:flex flex-col gap-4 absolute right-4 xl:right-8 2xl:right-12 top-1/2 -translate-y-1/2 pointer-events-none select-none z-10">
+            {/* Top Card: RSUD Banyumas */}
+            <div className="w-[180px] xl:w-[210px] 2xl:w-[230px] transform -rotate-2 drop-shadow-xl transition-transform hover:rotate-0 duration-300">
+              <Image
+                src="/images/hero/card-rsud-banyumas.png"
+                alt="Rumah Sakit Daerah Banyumas"
+                width={242}
+                height={201}
+                className="w-full h-auto"
+                priority
+              />
             </div>
-          </form>
+            {/* Bottom Card: Dokter */}
+            <div className="w-[140px] xl:w-[160px] 2xl:w-[170px] self-end transform rotate-3 drop-shadow-lg transition-transform hover:rotate-0 duration-300 -mt-2">
+              <Image
+                src="/images/hero/card-dokter.png"
+                alt="Tim Dokter Faskes Banyumas"
+                width={177}
+                height={125}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+          </div>
 
-          {/* Quick Search Shortcut Chips */}
-          <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
-            <span className="text-outline font-medium">Pintasan Cepat:</span>
-            {[
-              { label: "Kamar Rawat Inap", href: "/kamar" },
-              { label: "Jadwal Dokter Hari Ini", href: "/jadwal-dokter" },
-              { label: "Serum Anti Bisa (SABU)", href: "/info-obat" },
-              { label: "Stok Darah PMI", href: "/stok-darah" },
-              { label: "Hotline RS & IGD", href: "/direktori-faskes" },
-            ].map((chip) => (
-              <Link
-                key={chip.label}
-                href={chip.href}
-                className="px-3 py-1 rounded-full bg-surface-container-lowest hover:bg-surface-container-high border border-slate-200 text-on-surface-variant font-medium transition-colors"
-              >
-                {chip.label}
-              </Link>
-            ))}
+          {/* Center Content: Headline, Description, Search, Quick Chips */}
+          <div className="relative z-20 max-w-3xl mx-auto text-center flex flex-col items-center px-4">
+            {/* Live Sync Pill */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-sm shadow-sm mb-6 text-primary border border-slate-200/80">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-primary tracking-wide">
+                Priksa
+              </span>
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface mb-4 tracking-tight leading-[1.15]">
+              Portal Pelayanan Kesehatan Terpadu{" "}
+              <span className="text-primary block mt-1">Kabupaten Banyumas</span>
+            </h1>
+
+            <p className="text-sm sm:text-base lg:text-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
+              Akses cepat dan transparan informasi tempat tidur rumah sakit, antrean dokter, obat vital, serta persediaan darah dari seluruh faskes jejaring Banyumas.
+            </p>
+
+            {/* Quick Smart Search Bar */}
+            <form
+              onSubmit={handleSearchSubmit}
+              className="w-full bg-white/95 backdrop-blur-sm p-2 sm:p-2.5 rounded-full shadow-xl shadow-cyan-900/5 border border-slate-200/90 mb-4"
+            >
+              <div className="flex flex-col sm:flex-row items-center bg-slate-50/80 rounded-full p-1 gap-2">
+                <div className="flex items-center gap-2.5 px-4 py-2 flex-1 w-full">
+                  <Icon name="search" size={24} className="text-primary shrink-0" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Ketik kebutuhan Anda (misal: ICU Margono, Dokter Anak, Insulin, Darah O+)..."
+                    className="w-full bg-transparent border-none outline-none text-xs sm:text-sm text-on-surface placeholder:text-outline focus:ring-0"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  variant="primary"
+                  size="md"
+                  iconRight="arrow_forward"
+                  className="w-full sm:w-auto py-2.5 px-6 rounded-full shrink-0 font-semibold"
+                >
+                  Cari Langsung
+                </Button>
+              </div>
+            </form>
+
+            {/* Quick Search Shortcut Chips */}
+            <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
+              <span className="text-slate-500 font-semibold">Pintasan Cepat:</span>
+              {[
+                { label: "Kamar Rawat Inap", href: "/kamar" },
+                { label: "Jadwal Dokter Hari Ini", href: "/jadwal-dokter" },
+                { label: "Serum Anti Bisa (SABU)", href: "/info-obat" },
+                { label: "Stok Darah PMI", href: "/stok-darah" },
+                { label: "Hotline RS & IGD", href: "/direktori-faskes" },
+              ].map((chip) => (
+                <Link
+                  key={chip.label}
+                  href={chip.href}
+                  className="px-3.5 py-1.5 rounded-full bg-white/90 hover:bg-white border border-slate-200 text-slate-700 font-medium shadow-sm transition-all hover:border-primary/50 hover:text-primary hover:shadow"
+                >
+                  {chip.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 

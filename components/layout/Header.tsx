@@ -64,24 +64,25 @@ export function Header() {
         </nav>
 
         {/* Action Controls & Emergency CTA */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-4">
           {/* Emergency 119 Button */}
           <a
             href="tel:119"
-            className="relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-error text-on-error font-semibold text-xs sm:text-sm shadow-[0_4px_12px_rgba(186,26,26,0.25)] hover:bg-red-700 transition-all active:scale-95"
+            className="relative inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-error text-on-error font-semibold text-xs sm:text-sm shadow-[0_4px_12px_rgba(186,26,26,0.25)] hover:bg-red-700 transition-all active:scale-95 shrink-0"
             title="Panggil Layanan Medis Gawat Darurat Bebas Pulsa"
           >
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-85" />
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
             </span>
-            <span>Darurat 119</span>
+            <span className="hidden sm:inline">Darurat 119</span>
+            <span className="sm:hidden font-bold tracking-wider">119</span>
           </a>
 
           {/* Mobile Menu Toggle Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors"
+            className="xl:hidden p-2.5 ml-1 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-colors touch-manipulation"
             aria-label="Menu navigasi"
           >
             <Icon name={mobileMenuOpen ? "close" : "menu"} size={26} />

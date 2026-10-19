@@ -87,9 +87,9 @@ export default function Home() {
     <div className="py-6 sm:py-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* HERO SECTION */}
-        <div className="relative w-full overflow-hidden rounded-3xl bg-gradient-to-b from-slate-50/60 via-cyan-50/30 to-white pt-8 pb-12 sm:pt-12 sm:pb-16 mb-12 border border-slate-200/60 shadow-sm">
+        <div className="relative w-full overflow-hidden rounded-3xl bg-gradient-to-b from-slate-50/60 via-cyan-50/30 to-white pt-6 pb-8 sm:pt-12 sm:pb-16 mb-10 sm:mb-12 border border-slate-200/60 shadow-sm">
           {/* Background Network Graphic & Wave */}
-          <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center opacity-70">
+          <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center opacity-30 sm:opacity-70">
             <Image
               src="/images/hero/hero-bg-network.png"
               alt="Network Background"
@@ -139,41 +139,30 @@ export default function Home() {
           </div>
 
           {/* Center Content: Headline, Description, Search, Quick Chips */}
-          <div className="relative z-20 max-w-3xl mx-auto text-center flex flex-col items-center px-4">
-            {/* Live Sync Pill */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-sm shadow-sm mb-6 text-primary border border-slate-200/80">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
-              </span>
-              <span className="text-xs sm:text-sm font-bold text-primary tracking-wide">
-                Priksa
-              </span>
-            </div>
-
+          <div className="relative z-20 max-w-3xl mx-auto text-center flex flex-col items-center px-4 sm:px-6">
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface mb-4 tracking-tight leading-[1.15]">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface mb-3 sm:mb-4 tracking-tight leading-[1.2] sm:leading-[1.15]">
               Portal Pelayanan Kesehatan Terpadu{" "}
-              <span className="text-primary block mt-1">Kabupaten Banyumas</span>
+              <span className="text-primary block mt-0.5 sm:mt-1">Kabupaten Banyumas</span>
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
-              Akses cepat dan transparan informasi tempat tidur rumah sakit, antrean dokter, obat vital, serta persediaan darah dari seluruh faskes jejaring Banyumas.
+            <p className="text-xs sm:text-base lg:text-lg text-on-surface-variant max-w-2xl mb-5 sm:mb-8 leading-relaxed px-1">
+              Pantau ketersediaan tempat tidur RS, jadwal dokter, stok obat vital, serta persediaan darah dari seluruh faskes jejaring se-Banyumas secara transparan.
             </p>
 
             {/* Quick Smart Search Bar */}
             <form
               onSubmit={handleSearchSubmit}
-              className="w-full bg-white/95 backdrop-blur-sm p-2 sm:p-2.5 rounded-full shadow-xl shadow-cyan-900/5 border border-slate-200/90 mb-4"
+              className="w-full bg-white/95 backdrop-blur-sm p-1.5 sm:p-2.5 rounded-2xl sm:rounded-full shadow-xl shadow-cyan-900/5 border border-slate-200/90 mb-4 sm:mb-5"
             >
-              <div className="flex flex-col sm:flex-row items-center bg-slate-50/80 rounded-full p-1 gap-2">
-                <div className="flex items-center gap-2.5 px-4 py-2 flex-1 w-full">
-                  <Icon name="search" size={24} className="text-primary shrink-0" />
+              <div className="flex flex-col sm:flex-row items-center bg-slate-50/80 rounded-xl sm:rounded-full p-1 gap-2">
+                <div className="flex items-center gap-2.5 px-3 sm:px-4 py-2 flex-1 w-full">
+                  <Icon name="search" size={22} className="text-primary shrink-0" />
                   <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Ketik kebutuhan Anda (misal: ICU Margono, Dokter Anak, Insulin, Darah O+)..."
+                    placeholder="Cari RS, dokter, obat, atau darah..."
                     className="w-full bg-transparent border-none outline-none text-xs sm:text-sm text-on-surface placeholder:text-outline focus:ring-0"
                   />
                 </div>
@@ -183,7 +172,7 @@ export default function Home() {
                   variant="primary"
                   size="md"
                   iconRight="arrow_forward"
-                  className="w-full sm:w-auto py-2.5 px-6 rounded-full shrink-0 font-semibold"
+                  className="w-full sm:w-auto py-2.5 px-6 rounded-xl sm:rounded-full shrink-0 font-semibold text-xs sm:text-sm"
                 >
                   Cari Langsung
                 </Button>
@@ -191,23 +180,25 @@ export default function Home() {
             </form>
 
             {/* Quick Search Shortcut Chips */}
-            <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
-              <span className="text-slate-500 font-semibold">Pintasan Cepat:</span>
-              {[
-                { label: "Kamar Rawat Inap", href: "/kamar" },
-                { label: "Jadwal Dokter Hari Ini", href: "/jadwal-dokter" },
-                { label: "Serum Anti Bisa (SABU)", href: "/info-obat" },
-                { label: "Stok Darah PMI", href: "/stok-darah" },
-                { label: "Hotline RS & IGD", href: "/direktori-faskes" },
-              ].map((chip) => (
-                <Link
-                  key={chip.label}
-                  href={chip.href}
-                  className="px-3.5 py-1.5 rounded-full bg-white/90 hover:bg-white border border-slate-200 text-slate-700 font-medium shadow-sm transition-all hover:border-primary/50 hover:text-primary hover:shadow"
-                >
-                  {chip.label}
-                </Link>
-              ))}
+            <div className="w-full max-w-full overflow-hidden">
+              <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 sm:flex-wrap sm:justify-center no-scrollbar text-xs">
+                <span className="text-slate-500 font-semibold shrink-0 hidden sm:inline">Pintasan Cepat:</span>
+                {[
+                  { label: "Kamar Rawat Inap", href: "/kamar" },
+                  { label: "Jadwal Dokter", href: "/jadwal-dokter" },
+                  { label: "Serum Anti Bisa (SABU)", href: "/info-obat" },
+                  { label: "Stok Darah PMI", href: "/stok-darah" },
+                  { label: "Hotline RS & IGD", href: "/direktori-faskes" },
+                ].map((chip) => (
+                  <Link
+                    key={chip.label}
+                    href={chip.href}
+                    className="px-3.5 py-1.5 rounded-full bg-white/90 hover:bg-white border border-slate-200 text-slate-700 font-medium shadow-sm transition-all hover:border-primary/50 hover:text-primary hover:shadow shrink-0 whitespace-nowrap"
+                  >
+                    {chip.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
